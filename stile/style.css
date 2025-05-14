@@ -1,0 +1,207 @@
+/* Reset dan Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-image: url('../img/Banda-ancha.jpg'); /* Bisa kamu ubah sesuai file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100px;
+  z-index: 0;
+}
+
+
+/* Untuk membuat background transparan gelap */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.664); /* 0.3 = 30% gelap, bisa ubah sesuai kebutuhan */
+  z-index: -9; /* Agar di belakang semua konten */
+}
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background: url('../img/Banda-ancha.pg') no-repeat bottom center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.subtitle {
+  color: #e47805;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #1d3557;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #1d3557;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #00000092;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff4c4c;
+  /* color: #ddd; */
+}
+
+.btn-outline {
+  background-color: #ff4c4c;
+  border: none;
+  color: white;
+  /* background: none; */
+}
+
+.btn-outline:hover {
+  background-color: #eee;
+}
+
+/* Container utama social media */
+.social-media {
+  display: flex;
+  /* justify-content: center; */
+  gap: 15px;
+  /* padding: 40px 0 20px 0;  */
+  margin-top: 20px;
+}
+
+/* Link social media */
+.social-media a {
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+/* Efek hover untuk masing-masing ikon */
+.social-media a.github:hover { background-color: #24292e; }
+.social-media a.git:hover { background-color: #f1502f; }
+.social-media a.wordpress:hover { background-color: #21759b; }
+.social-media a.sigma:hover { background-color: #6c63ff; }
+.social-media a.facebook:hover { background-color: #3b5998; }
+.social-media a.instagram:hover { background-color: #e4405f; }
+.social-media a.youtube:hover { background-color: #ff0000; }
+
+/* Teks "Contact Account" */
+h3 {
+  text-align: 30px;
+  margin-top: 50px; /* geser ke bawah */
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+
+/* Gambar Hero */
+.hero-image img {
+  max-width: 380px;
+  border-radius: 20px;
+  object-fit: cover;
+  
+}
+
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* lebih rapat */
+  margin-top: 20px;
+}
+
+.profile-photo {
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* lebih rapat */
+  margin-top: 20px;
+}
+
+p{
+    text-align: center;
+}
+
+.profile-photo {
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.paper-text {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border-left: 4px solid #ff6b6b;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-top: -10px; /* lebih dekat ke gambar */
+}
+
+.paper-text:hover {
+  transform: translateY(-2px);
+}
+
